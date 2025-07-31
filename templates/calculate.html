@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Qalculate</title>
+</head>
+<body>
+  <h1>Qalculate Expression</h1>
+  <form method="post">
+    <input type="text" name="expression" placeholder="Enter expression">
+    <button type="submit">Calculate</button>
+  </form>
+  {% if expression %}
+    <h3>Expression: {{ expression }}</h3>
+    <pre>{{ result }}</pre>
+  {% endif %}
+  <a href="/">Back</a>
+</body>
+</html>

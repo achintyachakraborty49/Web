@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wolfram Alpha Search</title>
+</head>
+<body>
+  <h1>Ask Wolfram Alpha</h1>
+  <form method="post">
+    <input type="text" name="query" placeholder="Enter question">
+    <button type="submit">Search</button>
+  </form>
+  {% if query %}
+    <h3>Query: {{ query }}</h3>
+    <pre>{{ result }}</pre>
+  {% endif %}
+  <a href="/">Back</a>
+</body>
+</html>
